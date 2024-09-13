@@ -1,0 +1,28 @@
+﻿@page "/jsinterop"
+@using Leccion40.Components.Helper
+@inject IJSRuntime JSRuntime
+
+<h3>JS Runtime Interop Example</h3>
+
+<button @onclick="ShowAlert">Show Alert</button>
+<button @onclick="GetCurrentTime">Get Current Time</button>
+
+<p>@currentTime</p>
+
+@code {
+    private string? currentTime;
+
+    private async Task ShowAlert()
+    {
+        // Call the 'showAlert' JavaScript function
+        await JSRuntime.InvokeVoidAsync("showAlert", "Hello from Blazor!");
+        //await JSRuntime.ShowAlert("Hello from Blazor!");
+    }
+
+    private async Task GetCurrentTime()
+    {
+        // Call the 'getCurrentTime' JavaScript function and get its result
+        currentTime = await JSRuntime.InvokeAsync<string>("getCurrentTime");
+        //currentTime = await JSRuntime.GetCurrentTime();
+    }
+}
