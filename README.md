@@ -1,6 +1,6 @@
 # CURSO: APRENDE BLAZOR
 
-~LECCIÓN 40: Extensiones de JSRuntime
+# LECCIÓN 40: Extensiones de JSRuntime
 
 1. Abrir la aplicación con Visual Studio 2022 o VSCode
 
