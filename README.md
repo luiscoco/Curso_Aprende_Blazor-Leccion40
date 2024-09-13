@@ -2,6 +2,10 @@
 
 # LECCIÓN 40: Extensiones de JSRuntime
 
+En esta lección vamos a definir una clase que extiende al interface IJSRuntime en Blazor, permitiendo un interacción más fácil con las funciones de JavaScript desde los componentes de Blazor. 
+
+Esta nueva clase encapsula las funciones de JavaScript en métodos de C# reutilizables.
+
 1. Abrir la aplicación con Visual Studio 2022 o VSCode
 
 2. Creamos un archivo de JavaScript example.js dentro de la carpeta wwwroot/js donde definimos las funciones de JavaScript que vamos a invocar en nuestra aplicación de Blazor
