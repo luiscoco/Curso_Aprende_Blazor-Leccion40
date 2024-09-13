@@ -1,6 +1,6 @@
 # CURSO: APRENDE BLAZOR
 
-# LECCIÓN 40: Extensiones de JSRuntime
+# LECCIÓN 40: Extensiones del interface IJSRuntime
 
 En esta lección vamos a definir una clase que extiende al interface IJSRuntime en Blazor, permitiendo un interacción más fácil con las funciones de JavaScript desde los componentes de Blazor. 
 
