@@ -18,6 +18,7 @@ Esta nueva clase encapsula las funciones de JavaScript en métodos de C# reutili
 window.getCurrentTime = () => {
     return new Date().toLocaleTimeString();
 }
+```
 
 3. Creamos un nuevo componente NuevoComponente.razor desde donde vamos a invocar a las funciones de JavaScript definidas en el archivo example.js
 
